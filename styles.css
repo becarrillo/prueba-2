@@ -87,7 +87,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 6mm;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -99,7 +99,6 @@ ul {
     font-size: 15px;
     font-weight: bolder;
     border: 1px solid white;
-    margin: 10px 0;
 }
 
 .showcase h2,
@@ -108,18 +107,28 @@ ul {
 }
 
 /* NEW CARDS */
-.news-cards {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    justify-content: space-between;
+.new-cards div {
+     display: grid;
+    grid-template-columns: repeat(4), 1fr;
+    gap: 25px;
 }
 
-.new-cards h3, h4, h5, h6 {
+.news-cards img {
+    display: grid;
+    grid-template-columns: repeat(4), 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    width: 27em;
+    height: 360px;
+}
+
+.new-cards h3 {
     font-weight: 900;
     color: burlywood;
+    margin: 30px 10px;
+
 }
 
-.new-cards img {
-    width: 100%;
-    height: 180px;
+.new-cards p {
+    padding: 5px;
 }
